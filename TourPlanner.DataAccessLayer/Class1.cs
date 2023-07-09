@@ -1,6 +1,6 @@
 using System;
 
-namespace TourPlanner.BusinessLayer
+namespace TourPlanner.DataAccessLayer
 {
     public class Class1
     {

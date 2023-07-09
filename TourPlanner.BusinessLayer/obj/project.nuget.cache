@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F8iDMoNGUOJxd9CKy5VmIP0MSOWgwniJUBtD7G3FPtTkkCDNa8px8GPpHEXq3kcBycaeF5h20qTGVspkLfDBxg==",
+  "dgSpecHash": "cWx/MrJofgbLKqh94NQ/3nyQfiB4E/Wuw/9D5nKbIIM1rmoKYxf1hDOlWO/gBs6jJkL46Ve3O6R/RpeLaIHrPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jedia\\Desktop\\FH Teknikum Bücher\\4. Semester\\SWEN2\\TP-Project\\TourPlanner.BusinessLayer\\TourPlanner.BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\jedia\\Desktop\\FH Teknikum Bücher\\4. Semester\\SWEN2\\Tour-Planner\\TourPlanner.BusinessLayer\\TourPlanner.BusinessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
