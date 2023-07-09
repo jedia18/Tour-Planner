@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\jedia\Desktop\FH Teknikum Bücher\4. Semester\SWEN2\Tour-Planner\TourPlanner\App.xaml
-11407045341
+2-110220108
 
-5-52830708
+6-1553290232
 1941087547271
-MainWindow.xaml;
+MainWindow.xaml;ViewComponents\TopMenu.xaml;
 
-False
+True
 
