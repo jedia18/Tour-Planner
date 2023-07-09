@@ -1,59 +1,1 @@
-﻿<Window x:Class="TourPlanner.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TourPlanner"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="940">
-    <Grid Margin="3">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <!-- GridSplitter -->
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
-        
-        <!-- 1st Row -->      <!-- 1st Row -->      <!-- 1st Row -->
-        <Label Grid.Row="0" Grid.Column="0" Content="Tour Planner" HorizontalAlignment="Left" FontSize="14"/>
-        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,0,10,0">
-            <Ellipse Width="10" Height="10" Fill="Red" Margin="0,0,5,0"/>
-            <Ellipse Width="10" Height="10" Fill="Yellow" Margin="0,0,5,0"/>
-            <Ellipse Width="10" Height="10" Fill="Green"/>
-        </StackPanel>
-        
-        
-        <!--<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" Content="TourPlanner" VerticalAlignment="Center" HorizontalAlignment="Left"/>-->
-        <!-- <local:TourMenu x:Name="TourMenu" Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3"/>-->
-        <DockPanel Grid.Row="3" Grid.Column="0">
-            <!--<local:TourSearchBar x:Name="TourSearchBar" DockPanel.Dock="Top"/>-->
-            <!--<local:TourDataResults x:Name="TourDataResults" DockPanel.Dock="Top"/>-->
-        </DockPanel>
-        <GridSplitter Grid.Row="2" Grid.RowSpan="2" Grid.Column="1" Width="3" VerticalAlignment="Stretch"></GridSplitter>
-        <Grid Margin="3" Grid.Row="3" Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="480"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <!--<local:TourDataDetails x:Name="TourDataDetails" Grid.Row="0" Grid.Column="0"/>-->
-            <GridSplitter Grid.Row="1" Grid.Column="0" Height="3" HorizontalAlignment="Stretch"></GridSplitter>
-            <!--<local:TourDataLogs x:Name="TourDataLogs" Grid.Row="2" Grid.Column="0" />-->
-        </Grid>
-
-        <GridSplitter Grid.Row="2" Grid.RowSpan="1" Grid.Column="0" Width="3" HorizontalAlignment="Stretch"></GridSplitter>
-
-
-    </Grid>
-</Window>
+﻿<Window x:Class="TourPlanner.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        xmlns:local="clr-namespace:TourPlanner.ViewComponents"        mc:Ignorable="d"        Title="MainWindow" Height="800" Width="940">    <Grid Margin="3">        <Grid.RowDefinitions>            <!-- First Row -->            <RowDefinition Height="Auto"/>            <!-- Second Row -->            <RowDefinition Height="Auto"/>            <!-- Third Row -->  <!-- GridSplitter Vertical -->            <RowDefinition Height="Auto"/>            <!-- Fourth Row -->            <RowDefinition Height="*"/>        </Grid.RowDefinitions>                <Grid.ColumnDefinitions>            <!-- First Column -->            <ColumnDefinition Width="300"/>            <!-- Second Column -->            <ColumnDefinition Width="Auto"/>            <!-- Third Column -->            <ColumnDefinition Width="*"/>        </Grid.ColumnDefinitions>                                                <!-- 1st Row -->      <!-- 1st Row -->      <!-- 1st Row -->                <!-- 1st Column -->        <Label Grid.Row="0" Grid.Column="0" Content="Tour Planner" HorizontalAlignment="Left" FontSize="14"/>                <!-- 2nd Column -->        <!--Empty-->        <!-- 3rd Column -->        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,0,10,0">            <Ellipse Width="10" Height="10" Fill="Red" Margin="0,0,5,0"/>            <Ellipse Width="10" Height="10" Fill="Yellow" Margin="0,0,5,0"/>            <Ellipse Width="10" Height="10" Fill="Green"/>        </StackPanel>                                                <!-- 2nd Row -->     <!-- 2nd Row -->     <!-- 2nd Row -->        <!-- 1st, 2nd, and 3rd Column -->        <local:TopMenu x:Name="TopMenu" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>        <!-- 3rd Row -->                <!-- GridSplitter Vertical -->       <!-- GridSplitter Vertical -->        <GridSplitter Grid.Row="2" Grid.RowSpan="2" Grid.Column="1" Width="3" VerticalAlignment="Stretch"/>                                        <!-- 4th Row -->     <!-- 4th Row -->     <!-- 4th Row -->        <!-- 1st Column -->        <DockPanel Grid.Row="3" Grid.Column="0">            <local:SearchBox x:Name="SearchBox" DockPanel.Dock="Top"/>            <local:Tours x:Name="Tours" DockPanel.Dock="Top"/>        </DockPanel>        <!-- 2nd Column -->        <!-- GridSplitter Vertical -->        <!-- 3rd Column -->        <Grid Grid.Row="3" Grid.Column="2" Margin="3">            <Grid.RowDefinitions>                <!-- Tour Information Row -->                <RowDefinition Height="480"/>                <!-- GridSplitter Horizontal -->                <RowDefinition Height="Auto"/>                <!-- Logs Row -->                <RowDefinition Height="Auto"/>            </Grid.RowDefinitions>            <!-- Tour Information Row -->            <local:TourInformation x:Name="TourInformation" Grid.Row="0"/>            <!-- GridSplitter Horizontal -->            <GridSplitter Grid.Row="1" Grid.Column="0" Height="3" HorizontalAlignment="Stretch"></GridSplitter>            <!-- Logs Row -->            <local:Logs x:Name="Logs" Grid.Row="2"/>        </Grid>        <GridSplitter Grid.Row="2" Grid.RowSpan="1" Width="3" HorizontalAlignment="Stretch"></GridSplitter>    </Grid></Window>

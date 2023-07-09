@@ -5,8 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TourPlanner.ViewComponents"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="300" d:DesignWidth="80">
+
+    <Menu  Margin="0,0,0,1">
+        <MenuItem Header="_File" FontSize="12"> 
+            <MenuItem Header="_Tour Report" Command="{Binding PDFReportCommand}"/>
+            <MenuItem Header="_Summarize Report" Command="{Binding PDFSummaryCommand}"/>
+            <MenuItem Header="_Import" Command="{Binding Import}"/>
+            <MenuItem Header="_Export" Command="{Binding Export}"/>
+            <Separator />
+        </MenuItem>
+        <MenuItem Header="_Edit" FontSize="12">
+        </MenuItem>
+        <MenuItem Header="_Options" FontSize="12">
+        </MenuItem>
+    </Menu>
 </UserControl>

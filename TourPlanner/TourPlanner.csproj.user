@@ -7,7 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ViewComponents\Logs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewComponents\SearchBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewComponents\TopMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewComponents\TourInformation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewComponents\Tours.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewComponents\Logs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewComponents\SearchBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewComponents\TopMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewComponents\TourInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewComponents\Tours.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
